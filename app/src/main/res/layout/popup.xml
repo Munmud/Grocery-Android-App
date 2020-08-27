@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="25dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                android:text="@string/enter_item" />
+
+            <EditText
+                android:id="@+id/groceryItem"
+                android:layout_below="@+id/title"
+                android:layout_width="match_parent"
+                android:hint="@string/hint_item"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/groceryQty"
+                android:layout_below="@+id/groceryItem"
+                android:hint="@string/enter_quantity"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_below="@+id/groceryQty"
+                android:text="@string/save_button"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
